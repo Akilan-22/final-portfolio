@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white">
+    <!-- Navigation Bar -->
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#home" class="text-2xl font-['Pacifico'] text-gray-900">Portfolio</a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="nav-link text-gray-800 hover:text-primary transition-colors">Home</a>
+                <a href="#about" class="nav-link text-gray-800 hover:text-primary transition-colors">About</a>
+                <a href="#projects" class="nav-link text-gray-800 hover:text-primary transition-colors">Projects</a>
+                <a href="#contact" class="nav-link text-gray-800 hover:text-primary transition-colors">Contact</a>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-800">
+                <i class="ri-menu-line ri-lg"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full border-t border-gray-100 shadow-lg">
+            <div class="container mx-auto px-6 py-3 flex flex-col space-y-4">
+                <a href="#home" class="py-2 text-gray-800 hover:text-primary transition-colors">Home</a>
+                <a href="#about" class="py-2 text-gray-800 hover:text-primary transition-colors">About</a>
+                <a href="#projects" class="py-2 text-gray-800 hover:text-primary transition-colors">Projects</a>
+                <a href="#contact" class="py-2 text-gray-800 hover:text-primary transition-colors">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center relative overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=minimalist%20abstract%20background%20with%20subtle%20geometric%20patterns%20in%20light%20colors%2C%20soft%20gradient%20from%20white%20to%20light%20blue%2C%20modern%20and%20clean%20design%20perfect%20for%20a%20professional%20portfolio%20hero%20section%2C%20high%20quality%20digital%20art&width=1920&height=1080&seq=hero1&orientation=landscape'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-white bg-opacity-80"></div>
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 opacity-0" id="hero-title">
+                    Hi, I'm <span class="text-primary">Akilan </span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 mb-10 opacity-0" id="hero-subtitle">
+                    Creative Fullstack Developer  crafting digital experiences that blend innovation with usability
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 opacity-0" id="hero-buttons">
+                    <a href="#projects" class="px-8 py-3 bg-primary text-white font-medium rounded-button hover:bg-opacity-90 transition-all shadow-md hover:shadow-lg whitespace-nowrap">View My Work</a>
+                    <a href="#contact" class="px-8 py-3 border-2 border-primary text-primary font-medium rounded-button hover:bg-primary hover:text-white transition-all whitespace-nowrap">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">About Me</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20a%20male%20creative%20designer%20in%20his%20early%2030s%20with%20short%20brown%20hair%20and%20glasses%2C%20wearing%20a%20casual%20modern%20outfit%2C%20sitting%20in%20a%20bright%20modern%20office%20environment%20with%20design%20elements%20in%20the%20background%2C%20natural%20lighting%2C%20professional%20photography&width=600&height=800&seq=profile1&orientation=portrait" alt="Alexander Wright" class="w-full h-full object-cover object-top">
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Fullstack Developer</h3>
+                    <p class="text-gray-700 mb-6">
+                        Motivated Fullstack Developer with a B.Sc. in Computer Science and strong skills in HTML5, CSS3, JavaScript (ES6+), and React.js. Experienced in creating responsive, accessible, and cross-browser compatible web applications using Tailwind CSS, Git, and RESTful APIs. Actively learning back-end technologies (Node.js, Express.js) and UI/UX design principles (Figma, wireframing). Passionate about delivering scalable, user-centric solutions in agile teams, while continuously expanding expertise in tools like Next.js and TypeScript
+                    </p>
+                    <!-- <p class="text-gray-700 mb-8">
+                        Based in San Francisco, I've collaborated with startups, agencies, and established companies across various industries. My passion lies in the intersection of technology and design, where I can leverage both to create meaningful user experiences.
+                    </p> -->
+                    
+                    <div class="mb-10">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-4">Technical Skills</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">Frontend Development</span>
+                                    <span class="text-sm font-medium text-gray-700">90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill bg-primary" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">UI/UX Design</span>
+                                    <span class="text-sm font-medium text-gray-700">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill bg-primary" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">Backend Development</span>
+                                    <span class="text-sm font-medium text-gray-700">55%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill bg-primary" data-width="55%"></div>
+                                </div>
+                            </div>
+                            <!-- <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium text-gray-700">Mobile App Development</span>
+                                    <span class="text-sm font-medium text-gray-700">70%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill bg-primary" data-width="70%"></div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    
+                    <h4 class="text-lg font-semibold text-gray-900 mb-4">Work Experience</h4>
+                    <div class="space-y-6">
+                        <div class="timeline-item">
+                            <h5 class="text-base font-semibold text-gray-900"> Fullstack Developer Inten</h5>
+                            <p class="text-sm text-primary font-medium">Vcodez • 2025 - Present</p>
+                            <p class="text-sm text-gray-700 mt-1">Leading frontend development for enterprise SaaS products, focusing on performance optimization and accessibility.</p>
+                        </div>
+                        <!-- <div class="timeline-item">
+                            <h5 class="text-base font-semibold text-gray-900">UI/UX Designer & Developer</h5>
+                            <p class="text-sm text-primary font-medium">CreativeWorks Agency • 2019 - 2022</p>
+                            <p class="text-sm text-gray-700 mt-1">Designed and developed responsive websites and applications for clients across various industries.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5 class="text-base font-semibold text-gray-900">Web Developer</h5>
+                            <p class="text-sm text-primary font-medium">Digital Solutions Ltd • 2017 - 2019</p>
+                            <p class="text-sm text-gray-700 mt-1">Developed and maintained client websites, focusing on responsive design and cross-browser compatibility.</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-6">My Projects</h2>
+            <p class="text-gray-700 text-center max-w-2xl mx-auto mb-12">Explore a selection of my recent work showcasing my skills in web development, UI/UX design, and creative problem-solving.</p>
+            
+            <!-- <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="filter-button px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:border-primary hover:text-primary transition-all active whitespace-nowrap !rounded-button" data-filter="all">All Projects</button>
+                <button class="filter-button px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:border-primary hover:text-primary transition-all whitespace-nowrap !rounded-button" data-filter="web">Web Development</button>
+                <button class="filter-button px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:border-primary hover:text-primary transition-all whitespace-nowrap !rounded-button" data-filter="ui">UI/UX Design</button>
+                <button class="filter-button px-6 py-2 rounded-full border border-gray-300 text-gray-700 hover:border-primary hover:text-primary transition-all whitespace-nowrap !rounded-button" data-filter="mobile">Mobile Apps</button>
+            </div>
+             -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1
+                <div class="project-card rounded-lg overflow-hidden shadow-lg group" data-category="web">
+                    <img src="https://readdy.ai/api/search-image?query=modern%20e-commerce%20website%20interface%20displayed%20on%20desktop%20and%20mobile%20devices%2C%20clean%20minimalist%20design%20with%20product%20grid%20layout%2C%20professional%20product%20photography%2C%20shopping%20cart%20functionality%2C%20high-end%20UI%20design%20with%20white%20background%20and%20subtle%20color%20accents&width=600&height=450&seq=project1&orientation=landscape" alt="E-commerce Platform" class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110">
+                    <div class="project-overlay p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Luxury E-commerce Platform</h3>
+                        <p class="text-white text-sm mb-4">A responsive e-commerce website with advanced filtering and seamless checkout experience.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">React</span>
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Node.js</span>
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">MongoDB</span>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- Project 2 -->
+                <!-- <div class="project-card rounded-lg overflow-hidden shadow-lg group" data-category="ui">
+                    <img src="https://readdy.ai/api/search-image?query=dashboard%20UI%20design%20with%20data%20visualization%2C%20analytics%20charts%20and%20graphs%2C%20clean%20modern%20interface%20with%20light%20color%20scheme%2C%20organized%20layout%20with%20sidebar%20navigation%2C%20calendar%20and%20task%20management%20components%2C%20professional%20business%20application%20interface&width=600&height=450&seq=project2&orientation=landscape" alt="Dashboard UI" class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110">
+                    <div class="project-overlay p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Analytics Dashboard</h3>
+                        <p class="text-white text-sm mb-4">A comprehensive dashboard UI with real-time data visualization and customizable widgets.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Figma</span>
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Vue.js</span>
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">D3.js</span>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- Project 3 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-lg group" data-category="mobile">
+                    <img src="https://readdy.ai/api/search-image?query=fitness%20mobile%20app%20interface%20shown%20on%20smartphone%20mockups%2C%20workout%20tracking%20screens%2C%20clean%20modern%20UI%20with%20activity%20statistics%2C%20user%20profile%2C%20progress%20charts%2C%20exercise%20library%2C%20professional%20mobile%20application%20design%20with%20blue%20and%20white%20color%20scheme&width=600&height=450&seq=project3&orientation=landscape" alt="Fitness App" class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110">
+                    <div class="project-overlay p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Fitness Tracking App</h3>
+                        <p class="text-white text-sm mb-4">A mobile application for tracking workouts, nutrition, and personal fitness goals.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">React Native</span>
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Firebase</span>
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Redux</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <!-- <div class="project-card rounded-lg overflow-hidden shadow-lg group" data-category="web">
+                    <img src="https://readdy.ai/api/search-image?query=real%20estate%20website%20interface%20with%20property%20listings%2C%20map%20integration%2C%20search%20filters%2C%20modern%20clean%20design%2C%20property%20details%20page%20with%20high%20quality%20interior%20photography%2C%20responsive%20layout%20shown%20on%20multiple%20devices%2C%20professional%20web%20design&width=600&height=450&seq=project4&orientation=landscape" alt="Real Estate Platform" class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110">
+                    <div class="project-overlay p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Real Estate Platform</h3>
+                        <p class="text-white text-sm mb-4">A property listing website with advanced search, map integration, and virtual tours.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Angular</span>
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Express</span>
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- Project 5 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-lg group" data-category="ui">
+                    <img src="https://readdy.ai/api/search-image?query=banking%20app%20interface%20design%20with%20financial%20dashboard%2C%20transaction%20history%2C%20payment%20screens%2C%20account%20management%2C%20modern%20secure%20UI%20with%20clean%20layout%2C%20professional%20fintech%20application%20design%20with%20subtle%20blue%20accents%20on%20white%20background&width=600&height=450&seq=project5&orientation=landscape" alt="Banking App UI" class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110">
+                    <div class="project-overlay p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Banking App Redesign</h3>
+                        <p class="text-white text-sm mb-4">A complete UI/UX redesign for a banking application focusing on simplicity and security.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Sketch</span>
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">InVision</span>
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Principle</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-lg group" data-category="mobile">
+                    <img src="https://readdy.ai/api/search-image?query=food%20delivery%20app%20interface%20on%20smartphone%20mockups%2C%20restaurant%20browsing%2C%20menu%20selection%2C%20order%20tracking%2C%20payment%20screens%2C%20modern%20mobile%20UI%20design%20with%20food%20photography%2C%20clean%20layout%20with%20orange%20and%20white%20color%20scheme&width=600&height=450&seq=project6&orientation=landscape" alt="Food Delivery App" class="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110">
+                    <div class="project-overlay p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Food Delivery App</h3>
+                        <p class="text-white text-sm mb-4">A mobile application for ordering food with real-time delivery tracking and payment integration.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Flutter</span>
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Dart</span>
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-white text-xs">Google Maps API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-6">Get In Touch</h2>
+            <p class="text-gray-700 text-center max-w-2xl mx-auto mb-12">Have a project in mind or want to discuss potential collaborations? Feel free to reach out!</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div>
+                    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-colors" placeholder="Your name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-colors" placeholder="your.email@example.com">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-colors" placeholder="What is this regarding?">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-colors" placeholder="Your message here..."></textarea>
+                        </div>
+                        <button type="submit" id="submit-button" class="w-full px-6 py-3 bg-primary text-white font-medium rounded-button hover:bg-opacity-90 transition-all shadow-md hover:shadow-lg flex items-center justify-center whitespace-nowrap !rounded-button">
+                            <span>Send Message</span>
+                            <i class="ri-send-plane-line ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-4">
+                                    <i class="ri-map-pin-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-base font-medium text-gray-900">Location</h4>
+                                    <p class="text-gray-700">Chidambaram,Cuddalore</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-4">
+                                    <i class="ri-mail-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-base font-medium text-gray-900">Email</h4>
+                                    <p class="text-gray-700">akilansk2004@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full text-primary mr-4">
+                                    <i class="ri-phone-line ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-base font-medium text-gray-900">Phone</h4>
+                                    <p class="text-gray-700">+91 9361422340</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-6">Connect With Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-200 hover:bg-primary hover:text-white rounded-full transition-colors">
+                                <i class="ri-linkedin-fill ri-lg"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-200 hover:bg-primary hover:text-white rounded-full transition-colors">
+                                <i class="ri-github-fill ri-lg"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-200 hover:bg-primary hover:text-white rounded-full transition-colors">
+                                <i class="ri-dribbble-fill ri-lg"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-200 hover:bg-primary hover:text-white rounded-full transition-colors">
+                                <i class="ri-twitter-fill ri-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12 h-64 rounded-lg overflow-hidden shadow-md">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31288.657192472932!2d79.69771444999999!3d11.40157955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54c23aa1bce10b%3A0xe1a29e91a8ec81aa!2sChidambaram%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1749709170316!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#home" class="text-2xl font-['Pacifico'] text-white">Portfolio</a>
+                    <p class="text-gray-400 mt-2">Creating digital experiences that matter.</p>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
+                    <a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a>
+                    <a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/akilan-s-0a8524338" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full transition-colors">
+                        <i class="ri-linkedin-fill ri-lg"></i>
+                    </a>
+                    <a href="https://github.com/Akilan-22" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full transition-colors">
+                        <i class="ri-github-fill ri-lg"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full transition-colors">
+                        <i class="ri-dribbble-fill ri-lg"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full transition-colors">
+                        <i class="ri-twitter-fill ri-lg"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <hr class="border-gray-800 my-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm"> 2025 Akilan . All rights reserved.</p>
+                <p class="text-gray-400 text-sm mt-2 md:mt-0">Last updated: June 01, 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" id="back-to-top" class="back-to-top w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg">
+        <i class="ri-arrow-up-line ri-lg"></i>
+    </a>
+
+    <script src="script.js" defer></script>
+                    alert('Please fill in all fields');
+                    return;
+                }
+                
+                // Show loading state
+                const originalButtonText = submitButton.innerHTML;
+                submitButton.innerHTML = '<i class="ri-loader-4-line animate-spin"></i> Sending...';
+                submitButton.disabled = true;
+                
+                // Simulate form submission
+                setTimeout(() => {
+                    // Reset form
+                    contactForm.reset();
+                    
+                    // Show success message
+                    alert('Message sent successfully!');
+                    
+                    // Reset button
+                    submitButton.innerHTML = originalButtonText;
+                    submitButton.disabled = false;
+                }, 1500);
+            });
+        });
+    </script>
+
+    <!-- Back to Top Script -->
+    <script id="back-to-top-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.getElementById('back-to-top');
+            
+            // Show/hide back to top button
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 500) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
